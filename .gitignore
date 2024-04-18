@@ -230,3 +230,5 @@ buildNumber.properties
 *.xhtml
 
 # End of https://www.toptal.com/developers/gitignore/api/java,maven,web,intellij+iml,eclipse,git
+
+.idea
