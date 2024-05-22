@@ -42,10 +42,10 @@ jobs:
           MAVEN_OPTS: -Dmaven.repo.local=.m2/repository
       - name: Espera que el WebApp esté levantado
         run: |
-          until curl --output /dev/null --silent --head --fail http://localhost:8080; do
-            printf '.'
+          timeout 60 sh -c 'until curl --output /dev/null --silent --head --fail http://localhost:8080; do
+            printf "."
             sleep 5
-          done
+          done'
       - name: Evaluador de Entrega 1
         id: evaluator
         uses: education/autograding-command-grader@v1
