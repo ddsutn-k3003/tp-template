@@ -14,3 +14,9 @@ mvn clean compile exec:java -Dexec.mainClass="ar.edu.utn.dds.k3003.app.WebApp"
 - Luego hay que ejecutar ViandaTestServer, por defecto levanta en el puerto 8081. 
   Este NO se puede correr por linea de comando
 - Despues de esto, ya pueden usar cualquier cliente HTTP y probar los endpoins implementados por Webapp
+
+```
+# Completar con dirección donde despĺegaron en Render.com
+https://{miproyecto}.onrender.com
+```
+
